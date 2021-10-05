@@ -3,7 +3,7 @@
   #include <stdlib.h>
   #include <math.h>
 
-void main (void){
+int main (void){
     int n, v, vx, vy, cx, cy;
     
 
@@ -21,6 +21,7 @@ void main (void){
     gerarVet (n, vy);
 
     //Exibir o vetor
+    printf("Vetores escolhidos: ");
     exibir (n, vx, vy);
    
 
@@ -28,18 +29,15 @@ void main (void){
     cx= centroide(n, vx);
     cy= centroide(n, vy);
 
-    printf("\n [%d,%d]\n", cx, cy);
+    printf("\nCentroide: \n[%d,%d]\n", cx, cy);
 
     //transladar com a origem
     transladar (n, vx, vy, cx, cy);
+    printf("Vetores transladados: ");
     exibir (n, vx, vy);
 
     //Calcular Angulo
-    CalculaAngulo (n, vx, vy);
-
-    
-    
-
+    CalculaReta (n, vx, vy);
    
 return (0);
 }
@@ -62,7 +60,7 @@ void gerarVet (int n, int *v){
 void exibir (int n, int *v, int *vy){
     int i;
     for(i=0;i<n;i++){
-        printf("[%d,%d]", v[i], vy[i]);
+        printf("\n[%d,%d]", v[i], vy[i]);
     }
 }
 
@@ -84,14 +82,22 @@ void transladar (int n, int *vx, int *vy, int cx, int cy){
     }
 }
 
-void CalculaAngulo (int n, int *vx, int *vy){
-    int i;
-    for(i=0;i<n;i++){
-     int det= vx[i]*1 + vy[i] *0;
-     int dot= vx[i]*0 - vy[i] *1;
-     int angle= atan2(det, dot);
-
-        printf("%f", angle);
-    }
+void CalculaAngulo (int *vx, int *vy){
+        
+     int det= *vy-0;
+     int dot= *vx-1;
+     double angle= atan2(det, dot);
+    printf("\n %f", angle);
+    
         
 }
+
+void CalculaReta(int n, int *vx, int *vy){
+    int i;
+    for(i=0; i<n; i++){
+        vx[i];
+        vy[i];
+        CalculaAngulo(&vx[i], &vy[i]);
+    }
+}
+
