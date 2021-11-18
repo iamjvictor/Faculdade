@@ -1,4 +1,3 @@
-//codigo de ordenação de um vetor com recursividade
 #include <stdio.h>
 #include <string.h>
 
@@ -57,15 +56,15 @@ void exibir( int array[], int tam )
 
 int main( int argc, char * argv[] )
 {
-    int numeros[16] = { 6, -9, 7, 5, 3, -1, 8, -6, 4, 2, 1, -3, -5, 9, -8, 0 };
+    int numeros[10] = {7, 3, -1, 8,  2, 1, -3,  9, -8, 0 };
 
     printf("Array Original: ");
-    exibir( numeros, 16 );
+    exibir( numeros, 10 );
 
-    quicksort( numeros, 0, 16 );
+    quicksort( numeros, 0, 10 );
 
     printf("Array Ordenada: ");
-    exibir( numeros, 16 );
+    exibir( numeros, 10 );
 
     return 0;
 }
