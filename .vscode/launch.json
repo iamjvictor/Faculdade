@@ -7,12 +7,12 @@
       "request": "launch",
       "args": [],
       "stopAtEntry": false,
-      "cwd": "c:\\Users\\joao-\\OneDrive\\Área de Trabalho\\Trabalhos\\faculdade",
+      "cwd": "c:\\Users\\joao-\\OneDrive\\Área de Trabalho\\Trabalhos\\faculdade\\Ordenação de arquivo de texto",
       "environment": [],
-      "program": "c:\\Users\\joao-\\OneDrive\\Área de Trabalho\\Trabalhos\\faculdade\\build\\Debug\\outDebug",
+      "program": "c:\\Users\\joao-\\OneDrive\\Área de Trabalho\\Trabalhos\\faculdade\\Ordenação de arquivo de texto\\build\\Debug\\outDebug",
       "internalConsoleOptions": "openOnSessionStart",
       "MIMode": "gdb",
-      "miDebuggerPath": "C:\\MinGW\\bin\\gdb.exe",
+      "miDebuggerPath": "C:/MinGW/bin/gdb.exe",
       "externalConsole": false,
       "setupCommands": [
         {
